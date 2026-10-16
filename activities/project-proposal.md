@@ -9,7 +9,7 @@
 | Member | GitHub username | Personal CSC181 repository |
 | :---- | :---- | :---- |
 | Steve Nash H. Llamedo | stebbn | [https\://github.com/stebbn/CSC181/blob/main/activities/project-proposal.md](https://github.com/stebbn/CSC181/blob/main/activities/project-proposal.md)&nbsp; |
-| Rey Mark E. Degamo | Mark-Degams | [https\://github.com/Mark-Degams/csc181/tree/main/activities/project-proposal](https://github.com/Mark-Degams/csc181/tree/main/activities/project-proposal) |
+| Rey Mark E. Degamo | Mark-Degams | [https\://github.com/Mark-Degams/csc181/blob/main/activities/project-proposal.md](https://github.com/Mark-Degams/csc181/blob/main/activities/project-proposal.md) |
 | Brent Jehu Senica&nbsp; | HiraethAKR&nbsp; | [https\://github.com/HiraethAKR/Group-3-Team-Brainstorming](https://github.com/HiraethAKR/Group-3-Team-Brainstorming) |
 | Joexua Ross Rieck L. Paco | rpaco06 | [https\://github.com/rpaco06/CSC181/blob/main/activities/project-proposal.md](https://github.com/rpaco06/CSC181/blob/main/activities/project-proposal.md) |
 
@@ -57,9 +57,9 @@ Unclear transport routes, transfers, and fares
 
 The problem of unclear transit routes and fare structure was chosen because of the regularity and scale of its impact on a wide variety of people. People like students, workers, and visitors of an area. Public transit inefficiency is a recurring problem. Unlike occasional inconveniences, this issue translates directly to lost time, increased anxiety, and financial leakage through overpaying or taking suboptimal routes.
 
-The issue with the ToS problem is that there would be a need for a massive database and collaboration with other organizations in order to fact-check and verify information regarding a service provider’s terms of service. AI could be used, but the idea of paying for credits for our services is not feasible as we are broke.
+The issue with the ToS problem is that there would be a need for a massive database and collaboration with other organizations in order to fact-check and verify information regarding a service provider’s terms of service. AI could be used, but the idea of paying for credits for our services is not feasible as we are broke, and wasting water is bad :\<.
 
-The same could be said with the boarding problem. Where gathering accurate, updated information is difficult to do so with the resources currently within our reach. As boarding statuses could easily change, and owners would not need to update their status regarding the area as their goal has been reached. Which is occupation. It is far easier and less time-consuming to enlist boarding status through different means such as Facebook’s group pages, marketplace and easier for owners to remove its listing status when&nbsp;
+The same could be said with the boarding problem. Where gathering accurate, updated information is difficult to do so with the resources currently within our reach. As boarding statuses could easily change, and owners would not need to update their status regarding the area as their goal has been reached. Which is occupation. It is far easier and less time-consuming to enlist boarding status through different means such as Facebook’s group pages and marketplace, and it is easier for owners to remove their listing status when an occupant takes it.
 
 Moreover, this nuisance of a major gap of digital infrastructure available in the market. A lot of global navigation apps often are unable to accommodate the nature of commuting in a lot of countries. Especially the Philippines’ jeepney system and informal transfer points.
 
@@ -67,7 +67,7 @@ Moreover, this nuisance of a major gap of digital infrastructure available in th
 
 ### Working project title
 
-\[later\]
+<!-- gdoc_comment_begin: c2 --><!-- gdoc_comment_begin: c1 -->\[later\]<!-- gdoc_comment_end: c2 --><!-- gdoc_comment_end: c1 -->
 
 ### Problem statement
 
@@ -75,7 +75,7 @@ People who commute daily, and visitors alike in our country face problems gettin
 
 ### Proposed solution
 
-\[project name\] is a mobile transit navigation app made for allowing you to get the most efficient jeepney, bus, and train routes based on your origin and destination. The digital solution integrates an extensive local route mapping feature with an automated fare estimation system, which eliminates guessing for the commuter. It ensures that the passenger is prepared for the exact travel costs in advance and provides a seamless and confident commuting experience across the city’s network.
+<!-- gdoc_comment_begin: c2 -->\[project name\]<!-- gdoc_comment_end: c2 --> is a mobile transit navigation app made for allowing you to get the most efficient jeepney, bus, and train routes based on your origin and destination. The digital solution integrates an extensive local route mapping feature with an automated fare estimation system, which eliminates guessing for the commuter. It ensures that the passenger is prepared for the exact travel costs in advance and provides a seamless and confident commuting experience across the city’s network.
 
 ## 4\. Stakeholder List
 
@@ -85,8 +85,8 @@ People who commute daily, and visitors alike in our country face problems gettin
 | :---- | :---- | :---- | :---- | :---- |
 | Daily commuters | Primary Users | Fast routes and clear fares | Which part of your daily commute is  the hardest to figure out? | Short survey / Casual interviews |
 | Out of town visitors | Primary Users | Directions without further knowledge on local landmarks | How do you currently find your way around places you just visited? | Informal interviews |
-| Jeepney / Bus Drivers | Sources of routes and fare data | Routes and fares should match the real world to avoid confusion between drivers and passengers | Which routes, stops, or fares does passenger ask the most? | Informal interviews at terminals |
-| Local Tourism Office | Possible Beneficiary | Easier travel for tourist | What places or transportation do tourist ask your office most often? | Email, contact number, or visit |
+| Jeepney / Bus Drivers | Sources of routes and fare data | Routes and fares should match the real world to avoid confusion between drivers and passengers | Which routes, stops, or fares does passenger ask about the most? | Informal interviews at terminals |
+| Local Tourism Office | Possible Beneficiary | Easier travel for tourists | What places or transportation do tourist ask your office most often? | Email, contact number, or visit |
 
 &nbsp;
 
@@ -96,27 +96,36 @@ Stakeholder-count explanation, if needed: \[Explanation or Not applicable.\]
 
 ### Intended users and setting
 
-Daily commuters, students, workers, and out-of-town visitors in Iligan City who use jeepneys and buses and are unsure of routes, transfer points, or fares. They would use it on a smartphone before or during trip, within a limited&nbsp;
+Daily commuters, students, workers, and out-of-town visitors in Iligan City who use jeepneys and buses and are unsure of routes, transfer points, or fares. They would use it on a smartphone before or during trip, within a limited pilot coverage of selected major routes in the city.
 
 ### In-scope capabilities
 
 \[Describe 3–5 specific capabilities as actions users can perform.\]
 
-1. \[Capability 1\]  
-2. \[Capability 2\]  
-3. \[Capability 3\]
+1. <!-- gdoc_comment_begin: c3 -->Enter an origin and destination and see the suggested jeepney or bus route.  
+2. See where to transfer, if the trip needs more than one ride, and which route to take next.  
+3. View the estimated fare for the whole trip, including regular and discounted rates (student, senior, PWD).  
+4. Browse a route’s list of stops or map to see where it passes.  
+5. Report a wrong or outdated route or fare, so the data can be corrected.<!-- gdoc_comment_end: c3 -->
 
-### Out-of-scope capabilities
+### <!-- gdoc_comment_begin: c4 -->Out-of-scope capabilities
 
 \[Identify at least three features, integrations, services, or settings excluded from this semester's version.\]
 
-1. \[Exclusion 1\]  
-2. \[Exclusion 2\]  
-3. \[Exclusion 3\]
+1. Real-time vehicle tracking or arrival times, since this needs GPS hardware and driver participation  
+2. Jeepney and Bus routes in other city or areas outside the Iligan pilot coverage.  
+3. In-app payment or ticketing, turn-by-turn GPS navigation, and<!-- gdoc_comment_end: c4 -->  
+4. Automatic route and fare updates (data is updated manually by the team).&nbsp;  
+5. Live traffic or road condition information.&nbsp;  
+6. Official integration with the city, LTO, or transport cooperatives.&nbsp;  
+7. Multi-language support beyond English and Filipino/Bisaya.&nbsp;
 
 ### Expected deliverables
 
-\[List the planned outputs, such as a working prototype, documentation, and testing evidence.\]
+* A working prototype (mobile app or mobile-friendly web app (?)) covering the pilot routes.  
+* A route and fare dataset for those routes, with documented sources.  
+* Project documentation (requirements, design, and user guide).  
+* &nbsp;
 
 ### Constraints
 
@@ -155,9 +164,21 @@ Daily commuters, students, workers, and out-of-town visitors in Iligan City who 
 
 ### Change made after reviewing the proposal
 
-- Before review: \[Original idea or scope\]  
-- After review: \[Revised idea or scope\]  
+- Before review: \[Original idea or scope\]
+
+A real-time transit app covering jeepney, bus, and routes, with a vehicle tracker, cashless payment, and automatic route and fare updates.
+
+- After review: \[Revised idea or scope\]
+
+A static guide for selected major jeepney and bus routes in Iligan, with transfers and estimated fares. The vehicle tracker, cashless payment, are remove, then for the automatic routes and fare update updated to updating the data manually.
+
 - Reason: \[Why the change improves clarity, feasibility, or usefulness\]
+
+Feasibility: a vehicle tracker needs a GPS device on every vehicle, plus driver cooperation, mobile data, and a server, which is too costly and complex for a single semester.
+
+Feasibility: Iligan has no official live source of route and fare data, so automatic updates are not possible. Manual collection is also easier to verify.
+
+Clarity: with cashless payment, drivers cannot easily confirm who has paid, and making it work would mean changing how fares are paid in local transport, which costs a lot of money.
 
 ### Biggest remaining risk
 
@@ -176,7 +197,8 @@ Daily commuters, students, workers, and out-of-town visitors in Iligan City who 
 | Member | Ideas or analysis contributed | Drafting or review contribution |
 | :---- | :---- | :---- |
 | \[Name\] | \[Contribution\] | \[Contribution\] |
-| \[Name\] | \[Contribution\] | \[Contribution\] |
+| Steve Nash H. Llamedo | Main Idea | Drafting Lead |
+| Rey Mark E. Degamo | dunno | dunno |
 
 &nbsp;
 
@@ -211,8 +233,10 @@ We confirm that this document reflects our team's agreed-upon proposal. All memb
 
 | Member | Reviewed final version |
 | :---- | :---- |
-| \[Name\] | \[Yes/No\] |
-| \[Name\] | \[Yes/No\] |
+| Steve Nash H. Llamedo | \[Yes/No\] |
+| Rey Mark E. Degamo | \[Yes/No\] |
+| Brent Jehu Senica&nbsp; | \[Yes/No\] |
+| Joexua Ross Rieck L. Paco | \[Yes/No\] |
 
 &nbsp;
 
@@ -223,7 +247,7 @@ We confirm that this document reflects our team's agreed-upon proposal. All memb
 - [ ] The selection rationale is included.  
 - [ ] The problem statement contains 100–150 words.  
 - [ ] The proposed solution is included.  
-- [ ] Relevant stakeholders and consultation questions are identified.  
+- [x] Relevant stakeholders and consultation questions are identified.  
 - [ ] The scope contains 3–5 capabilities and at least three exclusions.  
 - [ ] Constraints, assumptions, and success indicators are included.  
 - [ ] A review change and three unanswered questions are documented.  
