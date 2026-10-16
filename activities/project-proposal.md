@@ -2,7 +2,7 @@
 
 ## Team Information
 
-- Team name: \[Team name\] (coz why not? ^\_^)  
+- <!-- gdoc_comment_begin: c1 -->Team name: Group 1? 2? 3, no 4 members<!-- gdoc_comment_end: c1 -->  
 - Working arrangement: Personal Computers  
 - Coordination method: Shared Document
 
@@ -67,7 +67,7 @@ Moreover, this nuisance of a major gap of digital infrastructure available in th
 
 ### Working project title
 
-<!-- gdoc_comment_begin: c2 --><!-- gdoc_comment_begin: c1 -->\[later\]<!-- gdoc_comment_end: c2 --><!-- gdoc_comment_end: c1 -->
+LargaFinder
 
 ### Problem statement
 
@@ -75,7 +75,7 @@ People who commute daily, and visitors alike in our country face problems gettin
 
 ### Proposed solution
 
-<!-- gdoc_comment_begin: c2 -->\[project name\]<!-- gdoc_comment_end: c2 --> is a mobile transit navigation app made for allowing you to get the most efficient jeepney, bus, and train routes based on your origin and destination. The digital solution integrates an extensive local route mapping feature with an automated fare estimation system, which eliminates guessing for the commuter. It ensures that the passenger is prepared for the exact travel costs in advance and provides a seamless and confident commuting experience across the city’s network.
+LargaFinder is a mobile transit navigation app made for allowing you to get the most efficient jeepney, bus, and train routes based on your origin and destination. The digital solution integrates an extensive local route mapping feature with an automated fare estimation system, which eliminates guessing for the commuter. It ensures that the passenger is prepared for the exact travel costs in advance and provides a seamless and confident commuting experience across the city’s network.
 
 ## 4\. Stakeholder List
 
@@ -102,19 +102,19 @@ Daily commuters, students, workers, and out-of-town visitors in Iligan City who 
 
 \[Describe 3–5 specific capabilities as actions users can perform.\]
 
-1. <!-- gdoc_comment_begin: c3 -->Enter an origin and destination and see the suggested jeepney or bus route.  
+1. <!-- gdoc_comment_begin: c2 -->Enter an origin and destination and see the suggested jeepney or bus route.  
 2. See where to transfer, if the trip needs more than one ride, and which route to take next.  
 3. View the estimated fare for the whole trip, including regular and discounted rates (student, senior, PWD).  
 4. Browse a route’s list of stops or map to see where it passes.  
-5. Report a wrong or outdated route or fare, so the data can be corrected.<!-- gdoc_comment_end: c3 -->
+5. Report a wrong or outdated route or fare, so the data can be corrected.<!-- gdoc_comment_end: c2 -->
 
-### <!-- gdoc_comment_begin: c4 -->Out-of-scope capabilities
+### <!-- gdoc_comment_begin: c3 -->Out-of-scope capabilities
 
 \[Identify at least three features, integrations, services, or settings excluded from this semester's version.\]
 
 1. Real-time vehicle tracking or arrival times, since this needs GPS hardware and driver participation  
 2. Jeepney and Bus routes in other city or areas outside the Iligan pilot coverage.  
-3. In-app payment or ticketing, turn-by-turn GPS navigation, and<!-- gdoc_comment_end: c4 -->  
+3. In-app payment or ticketing, turn-by-turn GPS navigation, and<!-- gdoc_comment_end: c3 -->  
 4. Automatic route and fare updates (data is updated manually by the team).&nbsp;  
 5. Live traffic or road condition information.&nbsp;  
 6. Official integration with the city, LTO, or transport cooperatives.&nbsp;  
@@ -122,10 +122,9 @@ Daily commuters, students, workers, and out-of-town visitors in Iligan City who 
 
 ### Expected deliverables
 
-* A working prototype (mobile app or mobile-friendly web app (?)) covering the pilot routes.  
+* A working prototype mobile-friendly web app covering the pilot routes.  
 * A route and fare dataset for those routes, with documented sources.  
-* Project documentation (requirements, design, and user guide).  
-* &nbsp;
+* Project documentation (requirements, design, and user guide).
 
 ### Constraints
 
@@ -133,8 +132,10 @@ Daily commuters, students, workers, and out-of-town visitors in Iligan City who 
 
 | Constraint | Effect on the project | How the team will respond |
 | :---- | :---- | :---- |
-| \[Constraint 1\] | \[Effect\] | \[Response\] |
-| \[Constraint 2\] | \[Effect\] | \[Response\] |
+| Limited time | Inability to map every route in the city | Limit the first version to a set of major routes and expand only if time allows |
+| No official, well-documented digital route data ***{{{—bai naay official document from ltfrb}}}*** | Route and fare data must be gathered by the team, which takes time and may contain errors | Collectt data |
+| No budget for paid services | Cannot use paid hosting, map APIs, or tools&nbsp; | Use free options such as GitHub Pages, OpenStreetMap, and a static JSON data file. Or worse create the map from scratch |
+| Fares have changed repeatedly in the past few months&nbsp; | Fare data can change without advance notice, making the estimate fares unreliable | Constanly check for updates in fare and let the user report wrong fares |
 
 &nbsp;
 
@@ -144,7 +145,7 @@ Daily commuters, students, workers, and out-of-town visitors in Iligan City who 
 
 | Assumption or dependency | Why it matters | How to check or address it |
 | :---- | :---- | :---- |
-| \[Item 1\] | \[Importance\] | \[Check/action\] |
+| There are reliable source for the latest fare matrix&nbsp; | All fares are estimated using the same matrix giving accurate fair | Request the latest matrix from LTFRB or the city office, and cross-check with drivers&nbsp; |
 | \[Item 2\] | \[Importance\] | \[Check/action\] |
 
 &nbsp;
@@ -182,13 +183,13 @@ Clarity: with cashless payment, drivers cannot easily confirm who has paid, and 
 
 ### Biggest remaining risk
 
-\[Identify the assumption, dependency, or limitation that could most affect the project.\]
+Jeepney / Buses fares vary by distance and are subject to localized matrix adjustments or notices of compliance. If the fare matrix changes and the team’s data is not updated, the app would show wrong fares and mislead users.&nbsp;
 
 ### Three unanswered questions
 
-1. \[Question 1\]  
-2. \[Question 2\]  
-3. \[Question 3\]
+1. Does commuters actually having hard time getting the route and fare information?&nbsp;  
+2. Will the app be useful for dail use, or just one-time use per visitor?  
+3. How will the team keep fares and routes up to date after the prototype?
 
 ## 7\. Member Contribution Record
 
@@ -196,9 +197,10 @@ Clarity: with cashless payment, drivers cannot easily confirm who has paid, and 
 
 | Member | Ideas or analysis contributed | Drafting or review contribution |
 | :---- | :---- | :---- |
-| \[Name\] | \[Contribution\] | \[Contribution\] |
 | Steve Nash H. Llamedo | Main Idea | Drafting Lead |
-| Rey Mark E. Degamo | dunno | dunno |
+| Rey Mark E. Degamo | Analysis & Feasibility check | Fleasibility check & organization |
+| Brent Jehu Senica&nbsp; |  |  |
+| Joexua Ross Rieck L. Paco |  |  |
 
 &nbsp;
 
@@ -242,15 +244,15 @@ We confirm that this document reflects our team's agreed-upon proposal. All memb
 
 ## Submission Checklist
 
-- [x] Each member contributed at least two problem ideas.  
+- [ ] Each member contributed at least two problem ideas.  
 - [x] Three candidate problems were compared.  
-- [ ] The selection rationale is included.  
-- [ ] The problem statement contains 100–150 words.  
-- [ ] The proposed solution is included.  
+- [x] The selection rationale is included.  
+- [x] The problem statement contains 100–150 words.  
+- [x] The proposed solution is included.  
 - [x] Relevant stakeholders and consultation questions are identified.  
-- [ ] The scope contains 3–5 capabilities and at least three exclusions.  
+- [x] The scope contains 3–5 capabilities and at least three exclusions.  
 - [ ] Constraints, assumptions, and success indicators are included.  
-- [ ] A review change and three unanswered questions are documented.  
+- [x] A review change and three unanswered questions are documented.  
 - [ ] Contributions, references, and AI use are declared.  
 - [ ] All members reviewed the same final document.  
 - [ ] Each member saved the file as `activities/project-proposal.md`.  
