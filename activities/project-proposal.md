@@ -1,354 +1,514 @@
-# Team Brainstorming and Preliminary Project Proposal
+# Product Backlog
 
 ## Team Information
 
-- <!-- gdoc_comment_begin: c1 -->Team name: <!-- gdoc_comment_end: c1 -->Terminal 3  
-- Working arrangement: Personal Computers  
-- Coordination method: Shared Document
+- Team name: Terminal 3  
+- Project title: Pasada  
+- Primary user group for the first release: Daily commuters and out-of-town visitors  
+- Format: User stories with one use case&nbsp;
 
 | Member | GitHub username | Personal CSC181 repository |
 | :---- | :---- | :---- |
-| Steve Nash H. Llamedo | stebbn | [https\://github.com/stebbn/CSC181/blob/main/activities/project-proposal.md](https://github.com/stebbn/CSC181/blob/main/activities/project-proposal.md)&nbsp; |
-| Rey Mark E. Degamo | Mark-Degams | [https\://github.com/Mark-Degams/csc181/blob/main/activities/project-proposal.md](https://github.com/Mark-Degams/csc181/blob/main/activities/project-proposal.md) |
-| Brent Jehu Senica&nbsp; | HiraethAKR&nbsp; | [https\://github.com/HiraethAKR/CSC181/blob/main/activities/project-proposal.md](https://github.com/HiraethAKR/CSC181/blob/main/activities/project-proposal.md) |
-| Joexua Ross Rieck L. Paco | rpaco06 | [https\://github.com/rpaco06/CSC181/blob/main/activities/project-proposal.md](https://github.com/rpaco06/CSC181/blob/main/activities/project-proposal.md) |
-
-&nbsp;
+| Steve Nash H. Llamedo&nbsp; | stebbn&nbsp; | https\://github.com/stebbn/CSC181/ |
+| Rey Mark E. Degamo | Mark\_Degams | https\://github.com/Mark-Degams/csc181 |
+| Brent Jehu Senica&nbsp; | HiraethAKR&nbsp; | https\://github.com/HiraethAKR/CSC181/ |
+| Joexua Ross Rieck L. Paco | rpaco06 | https\://github.com/rpaco06/CSC181/ |
 
 <!-- Add rows for all members. -->
 
 &nbsp;
 
-## 1\. Brainstorming Record
+## 1\. Interview Summary
 
-| Member | Problem or inconvenience | Who experiences it? | Current approach | Basis of the idea |
+| Code | Stakeholder role | Date | Method | Interviewer(s) |
 | :---- | :---- | :---- | :---- | :---- |
-| Steve Nash H. Llamedo | Getting around an area if you’re not familiar with the routes by heart can be a headache. For students, visitors, or anyone else trying to get from one side of town to the other, choosing which jeepney or bus to catch, where to transfer, and how much cash to bring is usually a matter of guesswork and asking around. Commuters waste time on the wrong rides, pay too much in fares, and stress out on daily trips without clear, centralized information. | Commuters, outsiders, tourist | Relying on word-of-mouth recommendations, asking drivers or passersby for directions, manually estimating cash fares, and using trial-and-error to find transfer points. | The lack of a centralized, real-time public transit information system that unifies jeepney, and bus routes with accurate fare calculation in one accessible mobile platform. |
-| Steve Nash H. Llamedo | Receiving updates, especially in rural areas or even in Iligan City, is difficult to receive or even verify. Most of these updates could even be fake news, as the current way of verification is only through signed papers that would get posted on different social media. Those that spread through word of mouth have no way of proving legitimacy unless heard firsthand. | Locals and tourists | Word-of-mouth or through Facebook posts regarding the matter | Lack of a centralized government information system that is reliable, fast, and updated. |
-| Rey Mark Degamo | Downloads folder on phones and computers gets bloated with files, making a specific file hard to find | Students, office workers, and anyone who downloads documents, images, or installers often | Manually scrolling or searching by filename, and occasionally deleting files in bulk. | Personal experience. Downloaded files pile up with generic names, so finding one means scrolling a long list.&nbsp; |
-| Rey Mark Degamo | The same item is sold at different prices across online shopping platforms, and comparing them takes a lot of manual effort. | Online shoppers, especially students and budget-conscious buyers | Opening each platform separately and comparing prices, ratings, and seller reviews by hand | Prices and seller ratings differ per platform, so shoppers check each one manually. Platform data access may be limited.&nbsp; |
-| Rey Mark Degamo | At crowded public events (festivals, concerts, parades), mobile networks get congested or go down, so groups, especially families with children, lose track of each other and can’t communicate.&nbsp; | Groups and families attending large crowded events, especially those with young children&nbsp; | Calling or texting, which is unreliable without signal, agreeing on meeting spots beforehand, or searching the crowd manually&nbsp; | Observation at crowded events like Diyandi, where signal is slow or down. Risk to children is an assumption to confirm with families and organizers.&nbsp; |
-| Brent Jehu Senica&nbsp; | Almost nobody reads Terms of Service. They’re long, full of legal language, and written in a way that’s hard to follow. So most people just click “I agree” and move on. The problem is that these contracts cover things that matter, like what the company does with your data, what rights you give up, how much you get charged, and whether you can cancel or get a refund. Users end up bound by agreements they never understood, and they only find out after agreeing to the ToS.&nbsp; | General Users | Community projects like ToS; DR have volunteers summarize popular services, but they only cover well-known ones, and general AI chatbots can misstate clauses. Regulations like the GDPR and the Philippines’ Data Privacy Act require clear, informed consent, but enforcement is slow, and companies can comply on paper while keeping the text hard to read. Some companies also add short summaries or data-sharing toggles, but this is voluntary, and the full legal text still governs.&nbsp; | This problem is well documented with multiple recent studies that touch upon the fact that nobody really reads the ToS. IF users are unable to understand the text, then consent is weak in practice. You cannot agree to something you do not understand. The users affected by these are vulnerable groups that need to be protected, which we can do with the technology we have today.&nbsp; |
-| Brent Jehu Senica | When a natural disaster or a tragedy happens, social media fills with posts designed to scare people into reacting. Pages and accounts know that fear drives engagement, so they grab the most shocking footage they can find, often an old clip from another place or year, and caption it as if it’s what happened. Viewers who don’t know better believe it, assume the worst is close to home, and share it “to warn others,” which spreads panic faster.&nbsp; | Users with low media literacy | Going by gut feeling, reading the comments, asking other people, screenshotting frames to try on Google Lens or other software such as TinEye/InVID/WeVerify, or other users or influencers trying to clear up the misinformation.&nbsp; | Published fact-checks on old footage being passed off as new during disasters, exaggerating the effects to amplify the fearmongering and farm engagement. |
-| Joexua Ross Rieck L. Paco | Whenever heavy rain floods Iligan, residents of low-lying and riverside barangays often can't tell which roads and bridges are still passable or which evacuation centers are open. Information comes in pieces through text alerts, Facebook posts, and neighbors, so people make quick decisions based on whatever they hear first. | Residents of flood-prone barangays&nbsp; | Phone alerts, Facebook posts, barangay announcements, and asking neighbors.&nbsp; | Sources like news reports plus individual experiences during Basyang (2026) and other typhoon disasters.&nbsp; |
-| Joexua Ross Rieck L. Paco | Students who come from outside Iligan find it hard to choose a boarding house because prices, house rules, and flood risk are hard to compare. They rely on Facebook groups, advice from seniors, and walking around looking for "for rent" signs, so many end up with a place that doesn't fit their budget or needs.&nbsp; | Out-of-town students, especially incoming freshmen.&nbsp; | Facebook groups, asking seniors or local students, and directly visiting potential boarding houses | Experience or observation&nbsp; |
+| \[V1\] | Primary User (Out-of-Town Visitor)&nbsp; | 2026-10-23&nbsp; | Online via Messenger&nbsp; | Steve Nash H. Llamedo&nbsp; |
+| \[V2\] | Primary User (Senior Citizen)&nbsp; | 2026-10-23&nbsp; | Informal in-person interview | Rey Mark Degamo&nbsp; |
+| \[V3\] | Primary User (Out-of-Town Visitor)&nbsp;&nbsp; | 2026-11-11 | Informal in-person interview | Brent Jehu Senica |
+| \[V4\] | Primary User (Student Boarder) | 2026-11-11 | Informal in-person interview | Joexua Ross Rieck Paco |
 
 &nbsp;
 
-## 2\. Candidate Comparison and Selection
+## 2\. From Interview Notes to Needs
 
-### Three shortlisted problems
+| ID | Source | What we heard or saw | Underlying need | Requirement idea | Type |
+| :---- | :---- | :---- | :---- | :---- | :---- |
+| F1 | V1 | Uses Google Maps and asks locals for directions. | Reliable route mapping without requiring local knowledge. | Digital route mapping system. | F |
+| F2 | V1 | Confused Petron for Shell and got dropped off kilometers away. | Clear, unambiguous stop identification. | Visual landmark tags for specific drop-off points. | F |
+| F3 | V1 | Hands over standard minimum fare or relies on asking the driver. | Certainty regarding exact travel costs before riding. | Automated fare calculator based on travel distance. | F |
+| F4 | V1 | Reads moving jeepney signboards to guess where to transfer. | Clear instructions on connecting routes. | Explicit transfer point guides mapped in the app. | F |
+| F5 | V2 | Avoids Miltrasco buses because fares fluctuate compared to jeepneys. | Transparency in pricing differences between vehicle types. | Fare lookup separated by operator/vehicle type. | F |
+| F6 | V2 | Sits at the back and cannot ask the driver for the senior fare. | Accessible pricing information without interacting with the driver. | Upfront fare display on a mobile screen. | F |
+| F7 | V2, V3 | Fare changed from 22 to 23 and back to 22 within weeks (V2). A driver blamed a fare change on fuel prices, and nothing was announced (V3). | Verification that the fare matrix is current and official. | Display a "last updated" timestamp for all fare data. | Q |
+| F8 | V2 | Drivers sometimes do not give the senior discount even when asked. | Concrete proof of the official discounted rate. | Show regular and discounted fares side by side. | F |
+| F9 | V3 | Told “near the school,” but the barangay had two; went to the wrong one and lost about an hour. | Tell apart places that share a name. More useful for establishments with multiple branches | Landmark tags show place type and nearest cross-street. | F |
+| F10 | V3 | Overpaid on tricycle rides in a new area and since then lowballs and waits for the driver to counter. | A reference price before haggling. | Reference fare for jeepney/bus. Tricycle/sikad reference fare deferred (US-11, Won’t-have). | F |
+| F11 | V3 | Trusts locals over Google Maps because outdated roads sent him down barely passable routes. | Data that matches local reality. | Let users report outdated data. | F |
+| F12 | V3 | Said “Hardest part is not knowing the names of places” and mentioned his son rode the wrong jeepney in week one. | Learn places and stop names before traveling. | Full stop list and landmark names. | F |
+| F13 | V3 | Available transport differs by region (jeepneys vs. tricycles/sikads). | Coverage limits are clear. | Pilot limited to Iligan jeepney/bus. | C |
+| F14&nbsp; | V4&nbsp; | Pays the regular fare when seated at the back because yelling “student” is awkward&nbsp; | Claim the discount without speaking&nbsp; | High-contrast screen showing the exact fare to show the driver&nbsp; | F&nbsp; |
+| F15&nbsp; | V4&nbsp; | Drivers say the student discount doesn’t apply on weekends or breaks, or without an ID&nbsp; | Know the official eligibility rules&nbsp; | Short eligibility note next to the discounted fare&nbsp; | F&nbsp; |
+| F16&nbsp; | V4&nbsp; | Guesses the fare and gets shortchanged on a ₱20 coin&nbsp; | Exact coin and change breakdown&nbsp; | Fare view shows amount to pay and change due&nbsp; | F&nbsp; |
+| F17&nbsp; | V4&nbsp; | Wants picture-based landmarks for MSU-IIT, Tibanga, San Miguel&nbsp; | Recognize drop-offs by sight&nbsp; | Photo tags on main student drop-offs&nbsp; | F&nbsp; |
 
-| Candidate problem | Why it matters | Feasibility concerns | Access to potential stakeholders |
+## 3.a Assumption Log
+
+| ID | Assumption | Risk if wrong (High/Medium/Low) | How we will check it |
 | :---- | :---- | :---- | :---- |
-| Unclear transport routes, transfers, and fares leave commuters guessing, wasting money, and taking the wrong rides without centralized transit information. | Improved commutes for everybody, and allows improved tourism within a city by allowing tourist, outsiders to traverse and explore with the use of the local transport modes. | Collaboration with the local transport department for smooth integration, Route maps for other areas are not officially well documented, | Partnering directly with the Iligan City Land Transportation Office (LTO) and Land Transportation Franchising and Regulatory Board (LTFRB) , local jeepney/bus driver associations (commuter cooperatives), and university student councils (e.g., MSU-IIT) to secure official route data, gain driver buy-in, and drive commuter adoption. |
-| Because Terms of Service are lengthy, complex, and rarely read, people routinely click "I agree" without realizing they are forfeiting rights, granting data access, and locking themselves into unexpected financial or cancellation terms. | Users could avoid exploitation and misuse of their data, especially against vulnerable users who often have all their data bare for bad actors to exploit. | Actual detection for such “Terms of Service”, as different websites have a different format/window of this agreement | Engaging with digital rights advocates, consumer protection agencies, browser extension store managers, and university tech incubators to validate legal parsing, gain trust, and distribute the tool to everyday internet users. |
-| Students who live outside Iligan have to visit potential boarding houses in person to check them, which costs time and travel money, and the trip may not even lead to a good fit. Important details such as curfew, visitor policies, and other house rules are often only learned on arrival, so they find out late whether a place suits them. Prices, location, and flood risk are also hard to compare, since most students rely on Facebook groups, advice from seniors, and "for rent" signs.&nbsp; | Students could save time and travel expenses and avoid ending up in a place that doesn't fit their budget, schedule, or lifestyle. Boarding house owners would also reach students more easily, and the problem affects a clearly identifiable group.&nbsp; | Listings and house rules would have to be collected by the team, and keeping them accurate and current takes effort. Owners may be unwilling to share details, and we still need to verify through interviews how widespread the problem is beyond our own experience.&nbsp; | Out-of-town students at MSU-IIT and other schools, student councils, boarding house owners and caretakers near campuses, and the school's housing or student affairs office, if one exists.&nbsp; |
+| A1 | Fluctuating fares (like the 22 to 23 jump, and unannounced fare change) are due to driver discretion/error rather than official LTFRB daily matrix changes. | High | We will cross-reference reported fare variations with the official LTFRB Iligan matrix. |
+| A2 | Commuters have mobile internet access while in transit to actively check the app. Others also say that signal is a non-issue when using specific functionalities on certain applications. | Medium | We will evaluate if users need an offline caching feature for routes during our next testing phase. |
+| A3 | Visitors will act on the app’s landmark and fare information without first confirming it with a local, even when a local says otherwise.&nbsp; | High | Scenario-based test with 5 unfamiliar users, including a task where a “local” contradicts the app. Judge with the amount of unfamiliar users trusting the app more than the “local”. Also ask the trust question in upcoming interviews.&nbsp; |
+| A4&nbsp; | The student discount applies on weekends and school breaks&nbsp; | High&nbsp; | Read RA 11314 and ask LTFRB or the city transport office. Don’t put eligibility text in the app until this is confirmed.&nbsp; |
 
 &nbsp;
 
-### Selected problem
+## 3.b User Stories
 
-Unclear transport routes, transfers, and fares.
-
-### Selection rationale
-
-The problem of unclear transit routes and fare structure was chosen because of the regularity and scale of its impact on a wide variety of people. People like students, workers, and visitors to an area. Public transit inefficiency is a recurring problem. Unlike occasional inconveniences, this issue translates directly to lost time, increased anxiety, and financial leakage through overpaying or taking suboptimal routes.
-
-The issue with the ToS problem is that there would be a need for a massive database and collaboration with other organizations in order to fact-check and verify information regarding a service provider’s terms of service. AI could be used, but the idea of paying for credits for our services is not feasible as we are broke, and wasting water is bad :\<.
-
-The same could be said with the boarding problem. Where gathering accurate and updated information is difficult to do so with the resources currently within our reach. As boarding statuses could easily change, owners would not need to update their status regarding the area once their goal of occupation has been reached. It is far easier and less time-consuming to enlist boarding status through different means such as Facebook’s group pages and marketplace, and it is easier for owners to remove their listing status when an occupant takes it.
-
-Moreover, there is a major gap in the digital infrastructure available in the market. A lot of global navigation apps are often unable to accommodate the nature of commuting in a lot of countries. Especially the Philippines’ jeepney system and informal transfer points.
-
-## 3\. Preliminary Project Proposal
-
-### Working project title
-
-Pasada
-
-### Problem statement
-
-People who commute daily, and visitors alike in our country face problems getting around the local public transport. At present, passengers depend mainly on word-of-mouth, remembering, or asking the driver if the jeep takes them to their destination, or asking people around them on the right jeep, bus, or transit lines. When dealing with an unknown transfer location or unexpected route blockage causing changes, this manual method is error-prone. In fact, passengers frequently experience delayed travel times, disorientation over precise drop-off points, and confusion over normal fare calculations, which often results in overpaying. There must be a system where the daily route can be accurately mapped, and fares can be estimated with ease. The assumption is that the target market has access to a smart device during their travel, that city routes will be reliably mapped digitally, and that transit operators use a common fare matrix.
-
-### Proposed solution
-
-Pasada is a transit navigation app made for allowing you to get the most efficient jeepney and bus routes based on your origin and destination. The digital solution integrates an extensive local route mapping feature with an automated fare estimation system, which eliminates guessing for the commuter. It ensures that the passenger is prepared for the exact travel costs in advance and provides a seamless and confident commuting experience across the city’s network.
-
-## 4\. Stakeholder List
-
-| Stakeholder role/group | Relationship to the project | Likely need or concern | Question to ask | Possible consultation method |
+| ID | User story | Source finding(s) | Epic | INVEST check |
 | :---- | :---- | :---- | :---- | :---- |
-| Daily commuters | Primary Users | Fast routes and clear fares | Which part of your daily commute is the hardest to figure out? | Short survey / Casual interviews |
-| Students and discounted-fare riders (senior, PWD) | Primary users | Correct discounted fares and easy-to-follow routes | When you commute, how sure are you that you’re paying the right discounted fare? | Short survey / informal interviews |
-| Out-of-town visitors | Primary Users | Directions without further knowledge of local landmarks | How do you currently find your way around places you just visited? | Informal interviews |
-| Jeepney / Bus Drivers | Sources of routes and fare data | Routes and fares should match the real world to avoid confusion between drivers and passengers | Which routes, stops, or fares do passengers ask about the most? | Informal interviews at terminals |
-| LTFRB / city transport office | Source of official fare matrix and route information | Data in the app should match official fares and routes | Where can we get the latest official fare matrix and route list for Iligan? | Email, office visit |
-| Local Tourism Office | Possible Beneficiary | Easier travel for tourists | What places or transportation do tourists ask your office most often? | Email, contact number, or visit |
+| US-01 | As an out-of-town visitor, I want to see a suggested transit route based on my origin and destination, so that I don't get lost. | F1 | Routing | Yes |
+| US-02 | As a commuter, I want to see distinct visual landmarks for my drop-off point, so that I don't get off at the wrong place. | F2, F9, F17 | Routing | Yes |
+| US-03 | As a new resident, I want to see explicit transfer points, so that I don't have to guess by reading moving jeepney signboards. | F4 | Routing | Yes |
+| US-04 | As a passenger, I want to calculate my exact regular fare before boarding, so that I don't overpay. | F3, F6, F10 | Fares | Yes |
+| US-05 | As a senior citizen, I want to see my discounted fare side-by-side with the regular fare, so that I know what to prepare. | F8 | Fares | Yes |
+| US-06 | As a careful commuter, I want to compare fares across different operators (e.g., bus vs. jeepney), so that I can choose the cheapest ride. | F5 | Fares | Yes |
+| US-07 | As a commuter, I want to see the "last updated" date on the fare matrix, so that I know if the price is current. | F7 | Fares | Yes |
+| US-08 | As a user with poor eyesight, I want the app to display fares in a large, simple font, so that I can read it without my glasses. | F6 | UI/UX | Yes |
+| US-09 | As an observant commuter, I want to report an outdated route or fare, so that the static data can be corrected for everyone. | F7, F11 | Maintenance | Yes |
+| US-10 | As a commuter, I want to browse a route’s complete list of stops, so that I can see everywhere it passes before deciding to ride. | F1, F2, F12 | Routing | Yes |
+| US-11 | As an out-of-town visitor, I want a reference fare for tricycle and sikad rides, so that I can negotiate fairly. | F10, F13 | Fares | Yes |
+| US-12&nbsp; | As a student boarder, I want a high-contrast screen showing my exact discounted fare and change, so that I can show the driver without announcing it across a crowded jeepney.&nbsp; | F14, F16 | Fares | Yes |
+| US-13 | As a student, I want to see when the student discount applies, so that I can answer a driver who says it doesn’t.&nbsp; | F15&nbsp; | Fares | Yes |
 
 &nbsp;
 
-Stakeholder-count explanation, if needed: Not applicable.
+### Epics and how we split them
 
-## 5\. Initial Scope
-
-### Intended users and setting
-
-Daily commuters, students, workers, and out-of-town visitors in Iligan City who use jeepneys and buses and are unsure of routes, transfer points, or fares. They would use it on a smartphone before or during a trip, within a limited pilot coverage of selected major routes in the city.
-
-### In-scope capabilities
-
-1. <!-- gdoc_comment_begin: c2 -->Enter an origin and destination and see the suggested jeepney or bus route.  
-2. See where to transfer, if the trip needs more than one ride, and which route to take next.  
-3. View the estimated fare for the whole trip, including regular and discounted rates (student, senior, PWD).  
-4. Browse a route’s list of stops or map to see where it passes.  
-5. Report a wrong or outdated route or fare, so the data can be corrected.<!-- gdoc_comment_end: c2 -->
-
-### <!-- gdoc_comment_begin: c3 -->Out-of-scope capabilities
-
-1. Real-time vehicle tracking or arrival times, since this needs GPS hardware and driver participation  
-2. Jeepney and Bus routes in other cities or areas outside the Iligan pilot coverage.  
-3. In-app payment or ticketing, turn-by-turn GPS navigation,<!-- gdoc_comment_end: c3 -->  
-4. Automatic route and fare updates (data is updated manually by the team).&nbsp;  
-5. Live traffic or road condition information.&nbsp;  
-6. Official integration with the city, LTO and LTFRB, or transport cooperatives.&nbsp;  
-7. Multi-language support beyond English and Filipino/Bisaya.&nbsp;
-
-### Expected deliverables
-
-* A working prototype mobile-friendly web app covering the pilot routes.  
-* A route and fare dataset for those routes, with documented sources.  
-* Project documentation (requirements, design, and user guide).
-
-### Constraints
-
-| Constraint | Effect on the project | How the team will respond |
+| Epic | Split into | How we split it |
 | :---- | :---- | :---- |
-| Limited time | Inability to map every route in the city | Limit the first version to a set of major routes and expand only if time allows |
-| No budget for paid services | Cannot use paid hosting, map APIs, or tools&nbsp; | Use free options such as GitHub Pages, OpenStreetMap, and a static JSON data file. Otherwise drawing the map ourselves. |
-| Fares have changed repeatedly in the past few months&nbsp; | Fare data can change without advance notice, making the estimated fares unreliable | Constantly check for updates in fares and let the user report wrong fares |
+| Fares | US-04, US-05, US-06, US-07, US-11, US-12, US-13 | By data type and user role (splitting basic regular fares from conditional discounts and operator-specific rates to keep stories small). |
+
+Stories we rewrote
+
+1. Before: As a user, I want to see the route and fare so I can travel safely. After: Split into US-01 (Routing) and US-04 (Fares). Reason: The original story was too large and lacked the Independent and Small qualities (INVEST); routing and fare calculation are distinct technical challenges.  
+2. Before: As a user, I want large text so I can read the app. After: US-08 (As a user with poor eyesight, I want the app to display fares in a large, simple font...). Reason: The original lacked a specific role and clear value (missing Specificity).
+
+## 4\. Acceptance Criteria
+
+### US-01: Calculate transit route
+
+Acceptance criteria:
+
+- [x] The system returns at least one valid jeepney or bus route based on selected origin and destination.  
+- [x] The route polyline is visibly rendered on the map interface.  
+- [x] (unhappy) The system displays "No route found" if the destination is outside the pilot coverage area.
+
+Scenario 1: Normal route calculation
+
+```gherkin
+Given the user selects "MSU-IIT" as origin and "City Public Plaza" as destination
+When the user taps "Find Route"
+Then the system displays the "Tibanga-City Proper" jeepney route on the map
+```
 
 &nbsp;
 
-### Assumptions and dependencies
+Scenario 2: Unreachable destination (Unhappy path)
 
-| Assumption or dependency | Why it matters | How to check or address it |
-| :---- | :---- | :---- |
-| There is a reliable source for the latest fare matrix&nbsp; | All fares are estimated using the same matrix, giving accurate fares | Request the latest matrix from LTFRB or the city office, and cross-check with drivers&nbsp; |
-| Commuters will report outdated routes or fares | Some manual updates rely on user reports to catch outdated routes and fares.&nbsp; | Ask users if they are willing to report errors or outdated data if they see one. |
+```gherkin
+Given the user selects an origin within coverage and a destination outside Iligan City limits
+When the user taps "Find Route"
+Then the system displays an "Out of coverage area" error message
+```
 
 &nbsp;
 
-### Success indicators
+### US-02: Visual landmark tags
 
-| Success indicator | Proposed evaluation method |
+Acceptance criteria:
+
+- [x] Stop locations are marked with distinct icons on the map.  
+- [x] Tapping a stop icon displays the specific landmark name (e.g., "Petron Station").  
+- [x] Landmarks sharing the same name have an extended name that includes the branch or street.  
+- [x] (unhappy) If the drop-off has no distinct landmark, the system displays the nearest cross-street intersection.
+
+Scenario 1: Same-name places&nbsp;
+
+```gherkin
+Given an area with 2 branches of the same franchise
+When the user taps either stop icon 
+Then the system displays "[Franchise]:[Branch]" with the nearest cross-street` 
+```
+
+&nbsp;
+
+Scenario 2: No distinct landmark (Unhappy path)&nbsp;
+
+```gherkin
+`Given a drop-off point with no named landmark 
+When the user taps the stop icon 
+Then the system displays the nearest cross-street intersection` 
+```
+
+### US-03: Explicit transfer points
+
+Acceptance criteria:
+
+- [x] Multi-leg journeys highlight transfer points with a unique "Transfer" node.  
+- [x] Step-by-step text directions state exactly which route to board next.  
+- [x] (unhappy) If a transfer requires walking more than 500 meters, the system displays a "Long walk required" warning.
+
+Scenario 1: Required transfer
+
+```gherkin
+Given a trip that requires two different jeepney routes
+When the route is generated
+Then the exact intersection where the user must alight and wait for the second jeepney is highlighted
+```
+
+&nbsp;
+
+Scenario 2: Excessive transfer distance (Unhappy path)
+
+```gherkin
+Given a calculated route transfer where the next stop is 600 meters away
+When the route instructions are displayed
+Then a warning badge indicating "Long walk required" is shown next to the transfer step
+```
+
+&nbsp;
+
+### US-04: Calculate exact regular fare
+
+Acceptance criteria:
+
+- [x] The calculated fare automatically displays upon successful route generation.  
+- [x] The fare matches the official LTFRB distance-based matrix for the selected route.  
+- [x] (unhappy) If route distance data is missing, the system displays "Fare calculation unavailable."
+
+Scenario 1: Standard fare calculation
+
+```gherkin
+Given a successful route spanning 5 kilometers
+When the route details load
+Then the system displays the exact base fare plus per-kilometer add-ons
+```
+
+&nbsp;
+
+Scenario 2: Missing distance data (Unhappy path)
+
+```gherkin
+Given a route where the total distance segment is undefined in the dataset
+When the system attempts to calculate the cost
+Then the UI displays "Fare calculation unavailable" instead of a wrong amount
+```
+
+&nbsp;
+
+### US-05: Side-by-side discounted fare
+
+Acceptance criteria:
+
+- [x] A toggle or list view clearly labels "Regular" and "Discounted (Student/Senior/PWD)" prices.  
+- [x] The discounted price accurately reflects the mandated 20% reduction.  
+- [x] (unhappy) If the selected vehicle type does not legally require a discount, the system disables the discount view and shows a tooltip explanation.
+
+Scenario 1: Viewing discount
+
+```gherkin
+Given the fare details screen is open for a valid jeepney route
+When the user looks at the pricing section
+Then both the "Regular: ₱13.00" and "Discounted: ₱10.40" amounts are displayed side-by-side
+```
+
+&nbsp;
+
+Scenario 2: Ineligible discount (Unhappy path)
+
+```gherkin
+Given a route utilizing a private shuttle that is exempt from mandated discounts
+When the user views the fare section
+Then the discounted fare is hidden and a "No discount applicable" tag is shown
+```
+
+### US-06: Compare fares across operators
+
+Acceptance criteria:
+
+- [x] Alternative vehicle modes (e.g., bus vs. jeepney) are shown if they service the same route.  
+- [x] Fares for both operators are listed adjacent to each other for easy comparison.  
+- [x] (unhappy) If only one operator services the route, the comparison UI is hidden.
+
+### US-07: Fare "last updated" timestamp
+
+Acceptance criteria:
+
+- [x] The fare matrix screen includes a timestamp indicating the latest data revision.  
+- [x] The date format is clear and localized (e.g., "Updated: Oct 2026").  
+- [x] (unhappy) If the timestamp cannot be retrieved, display "Update date unknown."
+
+### US-08: Large text interface for fares
+
+Acceptance criteria:
+
+- [x] The fare amount is displayed using a minimum font size of 24sp (scale-independent pixels).  
+- [x] High contrast colors (e.g., black on white) are used for the pricing block.  
+- [x] (unhappy) If the user's device system font is scaled to maximum, the app's layout wraps text cleanly without cutting off the fare.
+
+### US-09: Report outdated static data
+
+Acceptance criteria:
+
+- [x] A "Report Error" button is visible on every route and fare detail screen.  
+- [x] The user can select between "Wrong Route", "Wrong Fare", “Outdated route/landmark” in a dropdown.  
+- [x] (unhappy) If the user attempts to submit a blank report, the system blocks submission and prompts for details.
+
+### US-10: Browse full list of stops
+
+Acceptance criteria:
+
+- [x] The route details screen features an expandable "View all stops" list.  
+- [x] Stops are listed in chronological order from origin to destination.  
+- [x] (unhappy) If the route has no formally defined stops (only terminal-to-terminal), the list displays "Express route \- no intermediate stops."
+
+### US-11: Reference fare for tricycle and sikad
+
+Acceptance criteria:
+
+- [x] The system displays a reference fare in pesos for a tricycle or sikad ride between an origin and destination inside the pilot coverage area.  
+- [x] Each reference fare shows its data source and the date it was last verified.  
+- [x] The reference fare carries the label "Reference only. Drivers may quote a different price."  
+- [x] (unhappy) If no verified fare data exists for the selected area, the system displays "No reference fare available for this area" and shows no estimated amount.
+
+### US-12: Show-driver fare screen&nbsp;
+
+&nbsp;Acceptance criteria:
+
+- [x] A “Show driver” button appears on the fare details screen of every route that has fare data.  
+- [x] Tapping it opens a full-screen view showing the selected fare (Regular or Student/Senior/PWD) in black text on a white background at a minimum of 24px (1.5rem).  
+- [x] The user can enter the coin or bill they will hand over, and the screen displays the change due.  
+- [x] (unhappy) If the route has no fare data, the screen displays “Fare unavailable” and shows no amount.  
+- [x] (unhappy) If the entered amount is lower than the fare, the screen displays “Amount is less than the fare” and shows no change figure.
+
+### US-13: Discount eligibility note
+
+Acceptance criteria:
+
+- [x] A “When does this apply?” link appears next to the discounted fare.  
+- [x] Tapping it displays who qualifies, which ID is required, and whether the discount applies on weekends and school breaks, together with the source name and the date the rule was verified.  
+- [x] The note closes when the user taps “Close” or taps outside it.  
+- [x] (unhappy) If the rule has not been verified, the note displays “Not yet confirmed” and shows no rule text
+
+&nbsp;
+
+## 5\. Quality Requirements and Constraints (EARS)
+
+| ID | Requirement | EARS pattern | Type | Source | Number agreed with |
+| :---- | :---- | :---- | :---- | :---- | :---- |
+| NFR-01 | While the device is offline, the system shall display the last cached static route map and fare matrix. | State-driven | Quality | F1, F3 | 4 |
+| NFR-02 | When a user views the fare matrix screen, the system shall display the date the fare data was last verified. | Event-driven | Quality | F7 | 4 |
+| NFR-03 | The system shall calculate jeepney and bus fares strictly using the official LTFRB distance-based matrix.&nbsp; | Ubiquitous | Constraint | F3, F5 | 4 |
+
+&nbsp;
+
+## 6\. Use Case
+
+### Use-case diagram
+
+![Use-case](backlog-images/Use-case.png)
+
+### UC-01: Calculate Trip Route and Fare
+
+| Field | Description |
 | :---- | :---- |
-| Suggested routes and fares match real trips | Choose a set of trips, ride them or verify them with drivers, and compare against the app’s output. |
-| Commuters can find route and fare without asking others | Have several commuters or students unfamiliar with the routes and complete a task using the app. |
+| Primary actor | Commuter |
+| Precondition | The app is successfully loaded with the static route and fare dataset. |
+| Main success scenario | 1\. Commuter enters origin and destination landmarks.  2\. System calculates a valid jeepney/bus route.3\. System calculates regular and discounted fares for the distance. 4\. System displays the route map, transfer points, and side-by-side fares. 5\. Commuter selects the route to review visual landmark tags. |
+| Extensions | 2a. No direct route found: System calculates a multi-leg route and highlights transfer points. 2b. Destination outside pilot coverage: System displays an "Out of coverage area" error. |
+| Postcondition | The commuter knows the exact route, transfer intersections, and fare to prepare. |
+| Stories covered | US-01, US-02, US-03, US-04, US-05 |
 
 &nbsp;
 
-## 6\. Review and Next Steps
+## 7\. Story Map
 
-### Change made after reviewing the proposal
+|  | Define Journey | View Route & Transfers | Check Pricing | Trip Detail & Feedback |
+| :---- | :---- | :---- | :---- | :---- |
+| **Release 1 (MVP)** | US-01 | US-03, US-02 | US-04, US-05 |  |
+| **Release 2** |  | US-10 | US-06, US-12, US-13 |  |
+| **Later** |  |  | US-07, US-11 | US-08, US-09 |
 
-- Before review:
+&nbsp;
 
-A real-time transit app covering jeepney, bus, and routes, with a vehicle tracker, cashless payment, and automatic route and fare updates.
+## 8\. The Ordered Backlog
 
-- After review:
+| Rank | Story | MoSCoW | Size (S/M/L) | Value / effort quadrant | Sprint |
+| :---- | :---- | :---- | :---- | :---- | :---- |
+| 1 | US-01 Calculate transit route | Must | M | Big bet | Sprint 1 |
+| 2 | US-04 Calculate exact regular fare | Must | M | Big bet | Sprint 1 |
+| 3 | US-05 Side-by-side discounted fare | Must | S | Quick win | Sprint 1 |
+| 4 | US-03 Explicit transfer points | Must | M | Big bet | Sprint 2 |
+| 5 | US-02 Visual landmark tags | Must | M | Big bet | Sprint 2 |
+| 6 | US-06 Compare fares across operators | Should | S | Quick win | Later&nbsp; |
+| 7 | US-10 Browse full list of stops | Should | S | Quick win | Later&nbsp;&nbsp; |
+| 8 | US-12 Show-driver fare screen&nbsp; | Should&nbsp; | M | Big bet&nbsp; | Later |
+| 9 | US-08 Large text interface&nbsp; | Should&nbsp; | S | Fill-in | Later |
+| 10 | US-07 Last updated&nbsp; | Could | S | Fill-in | Later |
+| 11 | US-13 Discount eligibility note&nbsp; | Could | S | Quick win&nbsp; | Later&nbsp; |
+| 12 | US-09 Report outdated data&nbsp; | Could&nbsp; | S&nbsp; | Quick win&nbsp; | Later&nbsp; |
+| 13 | US-11 Tricycle/sikad fare&nbsp; | Won’t | M&nbsp; | Money pit | Out of Scope |
 
-A static guide for selected major jeepney and bus routes in Iligan, with transfers and estimated fares. The vehicle tracker and cashless payment are removed, and the automatic route and fare updates are updated to manual data.
+&nbsp;
 
-- Reason:
+### How we ordered it
 
-Feasibility: A vehicle tracker needs a GPS device on every vehicle, plus driver cooperation, mobile data, and a server, which is too costly and complex for a single semester.
+US-01 is first because every other story depends on a route being found, and V1's first problem was not knowing which vehicle to take (F1). US-04 and US-05 come next because both interviews showed fare uncertainty (F3, F6, F8), and US-05 is small. US-03 and US-02 follow because they depend on the route data from US-01 and address V1's and V3’s transfer and wrong-drop-off problems (F4, F2, F9). The main risk is the fare and route data, so Sprint 1 builds the dataset for a small set of pilot routes and records the source of each fare. The Release 2 and Later stories (US-06, US-10, US-07, US-09, US-08, US-12, US-13) improve the core path but are not needed to complete it. US-11 is a Won't-have for the first release. Only V3 raised tricycle and sikad fares (F10), no official fare source has been confirmed (A1), and the pilot is limited to jeepney and bus routes (F13). US-12 and US-13 come from V4 (F14, F15, F16). US-12 builds on the fare stories, and US-13 waits for verification of the student discount rules (A4).&nbsp;
 
-Feasibility: Iligan has no publicly accessible source of route and fare data that are regularly maintained and monitored, so automatic updates are not possible. Manual collection is also easier to verify.
+### Capacity check
 
-Clarity: With cashless payment, drivers cannot easily confirm who has paid, and making it work would mean changing how fares are paid in local transport, which costs a lot of money.
+| Question | Answer |
+| :---- | :---- |
+| How many Must-have stories, and their total size? | 5 Must-have stories: 4 M and 1 S. |
+| Do the Must-haves fit in about 60% of our time for two sprints? | Yes. There are only 5 Must-haves (4 M, 1 S), and the data is limited to a small set of pilot routes.&nbsp; |
+| Do the Release 1 stories form one complete path through the core workflow? | Yes |
+| Are all L-sized Must-have stories split? | Yes |
 
-### Biggest remaining risk
+&nbsp;
 
-Jeepney / Buses fares vary by distance and are subject to localized matrix adjustments or notices of compliance. If the fare matrix changes and the team’s data is not updated, the app would show wrong fares and mislead users.&nbsp;
+## 9\. Definition of Done
 
-### Three unanswered questions
+- [ ] Every acceptance criterion for the story, including its unhappy path, passes when run on a device or emulator by a team member who did not write the code.  
+- [ ] For Must-have stories, every Given–When–Then scenario has been run and its result recorded.  
+- [ ] At least one other team member reviewed the code, and it is merged to the main branch through a pull request.  
+- [ ] Any route or fare data the story uses has its source and revision date recorded in the dataset.  
+- [ ] The story was shown working at the sprint review, with no open defects against its acceptance criteria.
 
-1. Do commuters actually have a hard time getting the route and fare information?&nbsp;  
-2. Will the app be useful for daily use, or just one-time use per visitor?  
-3. How will the team keep fares and routes up to date after the prototype?
+## 10\. Traceability Table
 
-## 7\. Member Contribution Record
+| Story | Problem or goal it addresses | Source finding(s) | Test cases (Week 9\) |
+| :---- | :---- | :---- | :---- |
+| US-01 | Know which jeepney or bus to take without local knowledge | F1 | \[Leave blank for now\] |
+| US-02 | Avoid getting off at the wrong stop | F2, F9, F17 | \[Leave blank for now\] |
+| US-03 | Know where to transfer without reading signboards | F4 | \[Leave blank for now\] |
+| US-04 | Know the exact fare before boarding | F3, F6, F10 | \[Leave blank for now\] |
+| US-05 | Verify the correct discounted fare | F8 | \[Leave blank for now\] |
 
-| Member | Ideas or analysis contributed | Drafting or review contribution |
+&nbsp;
+
+Gaps found:&nbsp;
+
+- US-08 has no supporting finding. It cites F6, which is about a senior who cannot ask the driver for the fare, not about eyesight. Action: keep it as Could, mark the source as unverified, and ask about readability in the next interview round.  
+- F10 (tricycle and sikad fares) is covered by US-11, a Won't-have for the first release. Action: kept in the backlog at rank 13 and revisited once the fare source in A1 is confirmed.&nbsp;&nbsp;  
+- F13 (transport differs by region) is a constraint with no story of its own. Action: covered by the pilot-coverage unhappy path in US-01 and by limiting the pilot to Iligan jeepney and bus routes.&nbsp;
+
+## 11\. Validation
+
+### Team review
+
+| Problem found | Story or requirement | How we fixed it |
 | :---- | :---- | :---- |
-| Steve Nash H. Llamedo | Main Idea | Drafting Lead |
-| Rey Mark E. Degamo | Analysis & Feasibility check | Feasibility check & organization |
-| Brent Jehu Senica&nbsp; | Gathering supporting information for the main idea | Proofreading and Source checking |
-| Joexua Ross Rieck L. Paco | Defined the intended users and scope&nbsp; | Drafted the initial scope section&nbsp; |
+| Must-have story had no Given–When–Then scenarios, but the checklist requires at least 2 per Must-have.&nbsp; | US-02&nbsp; | Added a same-name landmark scenario and a no-distinct-landmark unhappy-path scenario.&nbsp; |
+| Story map placed US-02 in Release 2, but the backlog ranks it Must in Sprint 2, so Release 1 was incomplete.&nbsp; | US-02, Section 7&nbsp; | Moved US-02 into Release 1 so the Release 1 line crosses all four journey steps.&nbsp; |
+| The senior citizen interview is coded V2 in Section 1 but S1 in Section 2, so findings F5–F8 cannot be traced to an interview.&nbsp; | F5–F8, Section 1&nbsp; | Standardized on one code across both sections.&nbsp; |
+| Story cites a finding that does not support it (F6 is about asking the driver, not eyesight).&nbsp; | US-08&nbsp; | Flagged the missing source under "Gaps found" and marked it for verification.&nbsp; |
 
 &nbsp;
 
-## 8\. References
+### Stakeholder walk-through
 
-* [Penalties for overcharging jeepney drivers operators](https://newsinfo.inquirer.net/1565852/ltfrb-warns-penalties-for-overcharging-jeepney-drivers-operators/amp)  
-* [SakayPH](https://www.rappler.com/philippines/86160-sakayph-public-transport-metro-manila-tech-big-data/)  
-* [Fare hike](https://www.philstar.com/the-freeman/cebu-news/2026/03/18/2515167/take-effect-thursday-fare-hike-approved)  
-* [OpenStreetMap](https://www.openstreetmap.org/#map=5/13.02/121.77)  
-* [LTFRB](https://ltfrb.gov.ph/)  
-* ["At present, passengers depend mainly on word-of-mouth, remembering, or asking the driver if the jeep takes them to their destination, or asking people around them on the right jeep, bus, or transit lines."](https://www.atlantis-press.com/article/126023796.pdf)  
-  * Google Maps and Waze cater primarily to private vehicles, while local alternatives such as Sakay.ph and Moovit suffer from outdated or incomplete data.
+| Stakeholder | Date | What they said | What we changed |
+| :---- | :---- | :---- | :---- |
+| V1 (Out-of-Town Visitor)&nbsp; | 2026-11-11 | Upfront routes and transfer points solve her struggle of guessing where to switch jeeps. Street names confuse her because locals use landmark names (Shell vs. Petron). Seeing the fare beforehand removes the stress of asking drivers.&nbsp; | Kept US-01 and US-04 in Release 1\. Added brand-name examples (gas stations, bakeries) to the US-02 criteria.&nbsp; |
+| V2 (Senior Citizen)&nbsp; | 2026-11-11 | Liked seeing regular and senior fares side by side. Numbers need a very large font to read on a bumpy ride. Per-operator prices matter because bus and jeepney rates differ.&nbsp; | No change to US-05, already in Sprint 1\. Raised US-08 from Could to Should and cited this comment as its source. US-06 unchanged.&nbsp; |
+| V3 (Out-of-Town Visitor) | 2026-11-11 | Same-name landmarks (two schools in one barangay) cause delays if the app isn’t specific. Map apps can send users down impassable roads, so flagging wrong data is needed. A reference fare helps against overcharging.&nbsp; | No change. US-02 already requires cross-streets and facility types, US-09 already covers reporting, and US-04 covers the reference fare.&nbsp; |
+| V4 (Student Boarder)&nbsp; | 2026-11-11 | Release 1 routing and fares are enough for a first independent trip. Photo landmarks shouldn’t be delayed. He’d trust a driver over the app unless the app shows its data is official. The “Show driver” screen saves him from shouting “student.”&nbsp; | Moved US-02 into Release 1 and updated the story map. Added a source and last-updated line to the fare screen (not an “official” claim until A1 is verified). Updated A3.&nbsp; |
 
 &nbsp;
 
-## 9\. Team AI Use Declaration
+## 12\. Open Questions for Sprint 1
+
+1. Where will we get the official fare matrix per operator and the route list for the pilot routes, and which routes will the pilot cover?  
+2. How will we collect and verify landmark names for each pilot stop, for example telling the Shell and Petron stations near Mahayahay apart?  
+3. How do we confirm whether fare changes are official or driver error (LTFRB/city transport office)?  
+4. How do we handle landmark names that repeat in the same barangay?  
+5. Does the student discount apply on weekends and school breaks, and what ID is required?&nbsp;  
+6. What rounding rule applies to the 20% discounted fare?&nbsp;
+
+## 13\. Member Contribution Record
+
+\[Record actual contributions, including interviews, analysis, writing stories and criteria, and reviewing.\]
+
+| Member | Interviews or analysis | Stories, criteria, or use case | Review or validation |
+| :---- | :---- | :---- | :---- |
+| Steve Nash H. Llamedo | V1 Interview, Defined problem areas for out of town visitors | Core routing stories: US \- (01 \-04), Use Case | Idea checked, Formatting |
+| Rey Mark E. Degamo | V2 Interview, Section 8 | F5-F8, US- (05-08) | Interview relation check&nbsp; |
+| Brent Jehu Senica | V3 Interview, Sections 10 & 11\.&nbsp; | F9-F13, US-02, US \- 11 | Sections 4, 5, 6, 7, 8, 9, & 12\. Also  Fact checked, proofread, and Source checked. |
+| Joexua Ross Rieck L. Paco | V4 Interview, Stakeholder walk-through & Section 12 | F14-F17, US-12, US-13 | Reviewed the backlog, flagged inconsistencies&nbsp; |
+
+&nbsp;
+
+14\. References
+
+\- CSC181 Week 4 lecture slides
+
+\- Wake, B. (2003). "INVEST in Good Stories, and SMART Tasks." XP123.
+
+\- Mavin, A., Wilkinson, P., Harwood, A., and Novak, M. (2009). "Easy Approach to Requirements Syntax (EARS)." IEEE International Requirements Engineering Conference.
+
+\- Team interview notes V1, V2, V3, V4 (primary data).
+
+## 15\. Team AI Use Declaration
 
 Select one option:
 
-- [x] No generative AI tools were used by any member in preparing this submission.  
-- [ ] One or more members used generative AI tools. Details are provided below.
+- [ ] No generative AI tools were used by any member in preparing this submission.  
+- [x] One or more members used generative AI tools. Details are provided below.
 
 \[If AI was used, complete the table. If not, write Not applicable.\]
 
 | Member who used AI | Tool | Purpose and sections assisted | How output was checked or revised |
 | :---- | :---- | :---- | :---- |
-| N/A | N/A | N/A | N/A |
+| Brent Jehu Senica | Google Gemini | Interview log | Reread everything to make sure the translated piece was faithful to what was said in the original audio log |
 
-&nbsp;
+### Main prompts or interaction summary:
 
-### Main prompts or interaction summary
+- \[Pasted Audio transcript\] Translate the following transcript to english
 
-\[Provide the main prompts or a clear summary of the assistance received. Write Not applicable if no AI tools were used.\]
+We acknowledge that AI-generated suggestions are not evidence of actual stakeholder interviews, feedback, or verified user needs. Every finding in Section 2 and every walk-through in Section 11 comes from a real person we spoke to or observed. We remain responsible for the accuracy and explainability of this submission.
 
-We acknowledge that AI-generated suggestions are not evidence of actual stakeholder interviews, feedback, or verified community needs. We remain responsible for the accuracy and explainability of this submission.
+## 16\. Team Confirmation
 
-## 10\. Team Confirmation
-
-We confirm that this document reflects our team's agreed-upon proposal. All members listed below reviewed the final version, and each member will upload the same Markdown file to their personal CSC181 repository.
+We confirm that this document reflects our team's agreed-upon product backlog. All members listed below reviewed the final version, and each member will upload the same Markdown file to their personal CSC181 repository.
 
 | Member | Reviewed final version |
 | :---- | :---- |
 | Steve Nash H. Llamedo | Yes |
 | Rey Mark E. Degamo | Yes |
-| Brent Jehu Senica&nbsp; | Yes |
+| Brent Jehu Senica | Yes |
 | Joexua Ross Rieck L. Paco | Yes |
 
 &nbsp;
 
 ## Submission Checklist
 
-- [x] Each member contributed at least two problem ideas.  
-- [x] Three candidate problems were compared.  
-- [x] The selection rationale is included.  
-- [x] The problem statement contains 100–150 words.  
-- [x] The proposed solution is included.  
-- [x] Relevant stakeholders and consultation questions are identified.  
-- [x] The scope contains 3–5 capabilities and at least three exclusions.  
-- [x] Constraints, assumptions, and success indicators are included.  
-- [x] A review change and three unanswered questions are documented.  
+- [x] Interviews cover at least two stakeholder groups, with sources coded and no personal information.  
+- [x] The needs table has at least 8 findings, each labelled F, Q, or C.  
+- [x] Assumptions are recorded separately from evidence.  
+- [x] There are 10 to 15 user stories, each with a real role, a "so that", and at least one finding.  
+- [x] Epics are split, and at least two rewrites are recorded.  
+- [x] Every story has at least 3 acceptance criteria, including an unhappy path, with no weak words.  
+- [x] Every Must-have story has at least 2 Given–When–Then scenarios.  
+- [x] At least 3 quality requirements or constraints use EARS patterns.  
+- [x] One use case has a diagram, a main success scenario, and at least 2 extensions.  
+- [x] The story map has a Release 1 line that crosses every journey step.  
+- [x] Every story has a MoSCoW label and a size, and the backlog is in one order with no ties.  
+- [x] Must-haves fit in about 60% of capacity. Won't-have stories are kept, not deleted.  
+- [x] A Definition of Done is included.  
+- [x] The traceability table covers every Must-have story.  
+- [x] The team review and the stakeholder walk-through are recorded.  
 - [x] Contributions, references, and AI use are declared.  
 - [x] All members reviewed the same final document.  
-- [x] Each member saved the file as `activities/project-proposal.md`.  
+- [x] Each member saved the file as `activities/product-backlog.md`, with images in `activities/backlog-images/`.  
 - [x] Each member committed and pushed their copy to their personal repository.  
-- [x] Each member submitted their own GitHub file link through MOLE.
-
----
-
-```
-gdoc_comments:
-  c1:
-    status: RESOLVED
-    token: AX5pRSkxUbGZ2Naw1F_BfGx96RZYWOHDoZVwG8dfhr7lcgEFWJaF7LbrSXnVh4CK4gcTeuqUDJg0Tfi_Z4BLtxRH_Uyn9LvSz2q33mD6_Ou-l_0x2dklR2Lek6eN5-IVkLWuowmABRkVa9b2e5PYpt6j1ZjOA9GKff10L4Xa4YTSqInrnrRHa9hIUzvKtUUryIWPh5MY_OwuUV0LC6tiT7X1LO8QMgo4CEhZL5XZ2k7HM_9wLjhxMinw9qWZzflPoA4UiaCixzAIr0vHkNdRnT2CPSjT-7xKl6OYirjivi2Iz_3oeeBPvlCNx0uriRb7yjucCEymk3JoZuc7A0f9oAytx7WpA4NpuDIPORr-8AImuitXR-ROvdZIqnIIERa7PbWSl5EMhzYD27J9AfY
-    head:
-      author: Mark Degamo
-      time: '2026-10-16T08:27:44.377Z'
-      body: need name
-      quote: 'Team name: Group 1? 2? 3, no 4 members'
-    replies:
-    - author: Steve Nash LLAMEDO
-      time: '2026-10-16T12:10:36.775Z'
-      action: RESOLVE
-  c2:
-    status: RESOLVED
-    token: AX5pRSliv8VZ6WcwgQeZSqqsXDPmpVTv9uG-hS-9Mikq5uAfwJfAOz6qADzmNQNSGhrmNiagNcwM0t_5TtcPbjkV_-mtUfzedCUdbMUbSCD8S5FETEi1GWwtqmYQNipFFyvD7z7pB_q_xXpNjRBGweygnbNeR6R3tliRyXht9u_G24Dbg38JeOW6i3UH4o8hIBE-ujm9ROcc3fgMHQSGpc7n75G0aCsrAm_DD-O2b-dfinO1Y1pPb8msQeiMWST8QaEmPwKlpmTW8-feh-dCwJrybz1HibaegBT0Rq7K7C-Qvas3yXUV9LIHGOzRwHFFGTH6tL2-KXF0w99obVk9wN3g67ZWCdqrSH-dW-6q3a31ZVf-TD8Bl4pg9wtFnBp9OmxGNMUVO74KmU-UEUPWjD-vQC5kbDPL_IYw_tTVI9ufkeB26Jw2is57PBlfniSxjSu2Ui1Tnm8idFfz-K6z-766c6GFWWRPsBv1sdMVOXS7jVxAEH8LGMkPlYze1or87cyB-nBIBeqzAA2uE1rIkHOEZ9t8GnbBw9AkNwGeRi7SvP-AQi0YhobG7uiiacExqOvjXDaPyDifPaSt3JZeuSSL60lJpFcC_S_nAcWRJX1OMv9colwVBPqwgY21I2OLkgKeGPR84BIx9eQP824fDgMoiRMrKXrKuo4pWyBwo4IFkhr4aXPff6E6SoyQLFU4WTs9w44OPOARyjFDv3-XjObgxsiAHEA
-    head:
-      author: Joexua Ross Rieck PACO
-      time: '2026-10-16T07:32:28.006Z'
-      body: initial plng so js change kng ano final
-      quote: |-
-        Enter an origin and destination and see the suggested jeepney or bus route.
-        See where to transfer, if the trip needs more than one ride, and which route to take next.
-        View the estimated fare for the whole trip, including regular and discounted rates (student, senior, PWD).
-        Browse a route’s list of stops or map to see where it passes.
-        Report a wrong or outdated route or fare, so the data can be corrected.
-    replies:
-    - author: Joexua Ross Rieck PACO
-      time: '2026-10-16T09:52:42.553Z'
-      action: RESOLVE
-  c3:
-    status: RESOLVED
-    token: AX5pRSl4J8ZA1XdfQSB-TNLmg5L0O3Lw9788tQvz1mypZRtFdUIgICmOWY7_lZgp__BX0fcM7TKLbXe5L5jL000IBjDsWjkZ9-VQSNflckCZI8AKHK0syK5HTDgVzNp-8-QaA5JShvBscwmDXf8XuCfNUhPrTSj--H6GOfJ12HATKluKqh2athhWHtKI3w-UIC_GgrrL_bQjC2iMXVqh5EZDHmhJ28DYGE6IXot7cKNmYhjEwLRMVRVK092XJt3v64UZYUu2gBVOB-dZu2sj6kjV74zQkrvlXDrGbg8ZoJEroxwQPBEjova_-GNwowmNaYrx5gzFQ1e6cC9dHf2LhbGOh8R38evmU_AvQHnaP7oWrvgsyfhVTkxEC73P3Az7WQgc_01C7NjucmMk0mnrUYhuC_-gqaYHVDhyryJsh60gkrxL3kzpghFmRajMJ2Gn746UhTCpZKZOAx1cZfeAP55J0zbuBxgjX0gucqkOh_P06H-Lbq0_iqDDNslcN7Ga7f0qPIR0VA0_dXSU6-HIaXI1AsYEKQ4XOQNib6UDxbTZGIV7Effb-i-xsbO5WN--JdQET48jCFG6bVBalHIs-fuWjCMlCL5GdGn74WrteAMH1smJFLN_lFuhAk42rJaTcNYLtwpaxQQBvk3_IEViI3SD6wu2V9dXoAoSXAjGJwhkEv6kIbns69D58Q2JxkjAuHrxGJqkg5JM9WN5_mvydl5z-kJHdBBBg17l3UsCIqehvqbUoFTRz3REqZ_-lh0z25wOhGcjHkOXmOg-oPGjpg1eTMbk4N9Y3dkqym59vo8gAtZaOIBOLhwM-0FM8cbSBQWjzIj68d3sYk2nYbvE3-gRoXePZxYa0NtEljZzLlWq4EeOar_LofSS6_wI-IV2ScNHxJv22PIcojo1VixN
-    head:
-      author: Joexua Ross Rieck PACO
-      time: '2026-10-16T07:33:09.265Z'
-      body: do we add or scrap in app payments and user acc (?)
-      quote: |-
-        Out-of-scope capabilities
-        [Identify at least three features, integrations, services, or settings excluded from this semester&#39;s version.]
-        Real-time vehicle tracking or arrival times, since this needs GPS hardware and driver participation.
-        Jeepney and Bus routes and other city or areas outside the Iligan pilot coverage.
-        In-app payment or ticketing, turn-by-turn GPS navigation, and
-    replies:
-    - author: Mark Degamo
-      time: '2026-10-16T07:42:41.282Z'
-      body: ibutang siya sa in scope
-    - author: Mark Degamo
-      time: '2026-10-16T07:42:56.245Z'
-      body: since after review walaon man pu dna
-    - author: Mark Degamo
-      time: '2026-10-16T07:49:32.843Z'
-      action: RESOLVE
-  c4:
-    status: ACTIVE
-    token: AX5pRSme5yvanJFIl2yXG6l0DIPpvbNqHK8tLT3slrtpEuXSkZ7Kr1kOg4qoM2xct8gE5_Fi9NmkwhYpM8kIVxYfC40E9VTCmRy5-vcxYJF6zIFTJVck2p8LzEVIG_69Ao21cWCTAFwF2ClFM9JUonPIpW6UssDR0US9HSoU9ZTyO4te1-a5xXia_-QE0OJkJ58XvpdBUcnu6g4RA8UP3gxlymb2IaDTYOdnQJfi-gsqCzrXqNHfq8cExx7KFmB1GJ7EWeaHD48_Sosd9aO1oKz0uReBfrkQkNnkb1Lw_9OZihPIQTgb18rRCAv26SWB1bRXQ0eLj5TDftDa6po6xXV4u8f2QizawlFf22HIIjxtG-KKXF9OvctK88cCfxcG-NHlcsz3XCANwMUTiPcB9d_a4zsvCvBRpx7UfXIYvTH5o2ipIlaJnWv1jjpA8UpONieiqFVPonrsqvcGdo6o7xWZ4awfGfOXhYT6bo2L3EYBoRV-iK3333IK3kvlviAC6uNVusP8JOp9fL0
-    head:
-      author: Joexua Ross Rieck PACO
-      time: '2026-10-16T05:28:37.612Z'
-      body: if agree kayow d2
-      quote: During heavy rain, residents of flood-prone barangays in Iligan can&#39;t
-        easily tell which roads and bridges are passable or which evacuation centers
-        are open, because the information is scattered across text alerts, Facebook
-        posts, and word of mouth.
-  c5:
-    status: ACTIVE
-    token: AX5pRSl73AZDgDHp_YEzIX-t4jONId3-Qv2eoxhBrwGqwZd5Jx5oIWZwJaY7ViKQaZBCtPMyM9TYttR9TgJ0ZZnwTZPhCALnJjxL-kCl1Xi8NyILSAKlGAV4FN2SOSNk2MOTGv3tlpTPNOkDbRfo7XBA3Dcv32vsjQxZdY17g_vw3vqPmSalYlCZKQ7uLZZ_Oyf5Jq4p6yg8QxpvUDXnUSIUnk_nN1vsADi3CIFrDgaQfenp5ZSmqC4nSeNGF-thjw
-    head:
-      author: Rey Mark DEGAMO
-      time: '2026-10-16T11:58:15.298Z'
-      body: jehu daw hahaha
-      quote: Jehu do this
-  c6:
-    status: ACTIVE
-    token: AX5pRSmLoX-jMkwIS4AbLHP2jQPTZjwx4M1R0CzjLg2-uD2iKbQ3qJbLPxFt6sWJLDlFDFYeL5EDLsm9Uxv39tlw0QP1UMrgJ-UPh5_yHu4EHCW2XKgr-Mm5SI-Ahof5ptoyxr5bt_RStMmSz8aHzgqb1iaNiY_v0gRB8FW6nMXkIf2v-1UbDR6XECYMA-2tKi41p7RelOXHAkQQ9Zi2x3ggKsN5fKZKMOJoC_bwdibezokokUfoKzvLtvDzuefWZGmC6_SSMqrp0p8ZJQ
-    head:
-      author: Steve Nash LLAMEDO
-      time: '2026-10-16T06:39:56.501Z'
-      body: project name ideas yes
-      quote: '[later]'
-  c7:
-    status: ACTIVE
-    token: AX5pRSkSZXEC3LWSmB3J05P0oPd-bIu_H-nQXD-9NPqj-AZMkjalsUsxngzGdTCZQVN3XglI6RlTLL3xvghKD_DZhU8pwWUfjAblqsVXEpNJxU2XudITwVYHAP0TgPxfqeKmqkClQV5zwzbDGye1r7oMlIU1BP2Os0AEtvH1eLhKg4_ik_3nwfzgJSHctp9_F3oOOrkpiYsXh5jZR__RiavmWhbvmw1CKmToydbF0Qx1t2KGvWDI-tAkCgLYmAzfFvwBnazzypQORzof9EzU13UkX7fzZbJGu7_kacJlDnuLk7NZ280vwy3UraaLLnkDIVdWzhvwmkT_szUjLvzrzhoq2RiEoU_o8Ys1knLtvRUqhSkPnf3M-iEuL_dVxNKjk2yJZD00xcD1uvTM7bU9tw-oDrW2pNg-R2K0bQ
-    head:
-      author: Mark Degamo
-      time: '2026-10-16T06:40:07.707Z'
-      body: mag local name ta?
-      quote: '[later]'
-    replies:
-    - author: Steve Nash LLAMEDO
-      time: '2026-10-16T06:40:17.436Z'
-      body: pwede ye,
-    - author: Steve Nash LLAMEDO
-      time: '2026-10-16T06:40:23.127Z'
-      body: also team name
-```
----
+- [x] Each member submitted their own GitHub file link through MOLE before November 11, 2026 23:59:59.
