@@ -39,10 +39,10 @@
 | F4 | V1 | Reads moving jeepney signboards to guess where to transfer. | Clear instructions on connecting routes. | Explicit transfer point guides mapped in the app. | F |
 | F5 | V2 | Avoids Miltrasco buses because fares fluctuate compared to jeepneys. | Transparency in pricing differences between vehicle types. | Fare lookup separated by operator/vehicle type. | F |
 | F6 | V2 | Sits at the back and cannot ask the driver for the senior fare. | Accessible pricing information without interacting with the driver. | Upfront fare display on a mobile screen. | F |
-| F7 | V2, V3 | Fare changed from 22 to 23 and back to 22 within weeks (S1). A driver blamed a fare change on fuel prices, and nothing was announced (V3). | Verification that the fare matrix is current and official. | Display a "last updated" timestamp for all fare data. | Q |
+| F7 | V2, V3 | Fare changed from 22 to 23 and back to 22 within weeks (V2). A driver blamed a fare change on fuel prices, and nothing was announced (V3). | Verification that the fare matrix is current and official. | Display a "last updated" timestamp for all fare data. | Q |
 | F8 | V2 | Drivers sometimes do not give the senior discount even when asked. | Concrete proof of the official discounted rate. | Show regular and discounted fares side by side. | F |
 | F9 | V3 | Told “near the school,” but the barangay had two; went to the wrong one and lost about an hour. | Tell apart places that share a name. More useful for establishments with multiple branches | Landmark tags show place type and nearest cross-street. | F |
-| F10 | V3 | Overpaid on tricycle rides in a new area and since then lowballs and waits for the driver to counter. | A reference price before haggling. | Reference fare for jeepney/bus. Tricycle/sikad is out of scope for now. | F |
+| F10 | V3 | Overpaid on tricycle rides in a new area and since then lowballs and waits for the driver to counter. | A reference price before haggling. | Reference fare for jeepney/bus. Tricycle/sikad reference fare deferred (US-11, Won’t-have). | F |
 | F11 | V3 | Trusts locals over Google Maps because outdated roads sent him down barely passable routes. | Data that matches local reality. | Let users report outdated data. | F |
 | F12 | V3 | Said “Hardest part is not knowing the names of places” and mentioned his son rode the wrong jeepney in week one. | Learn places and stop names before traveling. | Full stop list and landmark names. | F |
 | F13 | V3 | Available transport differs by region (jeepneys vs. tricycles/sikads). | Coverage limits are clear. | Pilot limited to Iligan jeepney/bus. | C |
@@ -51,23 +51,23 @@
 | F16&nbsp; | V4&nbsp; | Guesses the fare and gets shortchanged on a ₱20 coin&nbsp; | Exact coin and change breakdown&nbsp; | Fare view shows amount to pay and change due&nbsp; | F&nbsp; |
 | F17&nbsp; | V4&nbsp; | Wants picture-based landmarks for MSU-IIT, Tibanga, San Miguel&nbsp; | Recognize drop-offs by sight&nbsp; | Photo tags on main student drop-offs&nbsp; | F&nbsp; |
 
-3\. Assumption log
+## 3.a Assumption Log
 
 | ID | Assumption | Risk if wrong (High/Medium/Low) | How we will check it |
 | :---- | :---- | :---- | :---- |
-| A1 | Fluctuating fares (like the 22 to 23 jump, and announced fare change) are due to driver discretion/error rather than official LTFRB daily matrix changes. | High | We will cross-reference reported fare variations with the official LTFRB Iligan matrix. |
+| A1 | Fluctuating fares (like the 22 to 23 jump, and unannounced fare change) are due to driver discretion/error rather than official LTFRB daily matrix changes. | High | We will cross-reference reported fare variations with the official LTFRB Iligan matrix. |
 | A2 | Commuters have mobile internet access while in transit to actively check the app. Others also say that signal is a non-issue when using specific functionalities on certain applications. | Medium | We will evaluate if users need an offline caching feature for routes during our next testing phase. |
-| A3 | Visitors will act on the app’s landmark and fare information without first confirming it with a local, even when a local says otherwise.&nbsp; | High | Scenario-based test with X unfamiliar users, including a task where a “local” contradicts the app. Judge with the amount of unfamiliar users trusting the app more than the “local”. Also ask the trust question in upcoming interviews.&nbsp; |
+| A3 | Visitors will act on the app’s landmark and fare information without first confirming it with a local, even when a local says otherwise.&nbsp; | High | Scenario-based test with 5 unfamiliar users, including a task where a “local” contradicts the app. Judge with the amount of unfamiliar users trusting the app more than the “local”. Also ask the trust question in upcoming interviews.&nbsp; |
 | A4&nbsp; | The student discount applies on weekends and school breaks&nbsp; | High&nbsp; | Read RA 11314 and ask LTFRB or the city transport office. Don’t put eligibility text in the app until this is confirmed.&nbsp; |
 
 &nbsp;
 
-## 3\. User Stories
+## 3.b User Stories
 
 | ID | User story | Source finding(s) | Epic | INVEST check |
 | :---- | :---- | :---- | :---- | :---- |
-| US-01 | As an out-of-town visitor, I want to see a suggested transit route based on my origin and destination, so that I don't get lost. | F1 | Routing | Yes |
-| US-02 | As a commuter, I want to see distinct visual landmarks for my drop-off point, so that I don't get off at the wrong place. | F2, F9 | Routing | Yes |
+| US-01&nbsp; | As an out-of-town visitor, I want to see a suggested transit route based on my origin and destination, so that I don't get lost. | F1 | Routing | Yes |
+| US-02 | As a commuter, I want to see distinct visual landmarks for my drop-off point, so that I don't get off at the wrong place. | F2, F9, F17 | Routing | Yes |
 | US-03 | As a new resident, I want to see explicit transfer points, so that I don't have to guess by reading moving jeepney signboards. | F4 | Routing | Yes |
 | US-04 | As a passenger, I want to calculate my exact regular fare before boarding, so that I don't overpay. | F3, F6, F10 | Fares | Yes |
 | US-05 | As a senior citizen, I want to see my discounted fare side-by-side with the regular fare, so that I know what to prepare. | F8 | Fares | Yes |
@@ -75,9 +75,9 @@
 | US-07 | As a commuter, I want to see the "last updated" date on the fare matrix, so that I know if the price is current. | F7 | Fares | Yes |
 | US-08 | As a user with poor eyesight, I want the app to display fares in a large, simple font, so that I can read it without my glasses. | F6 | UI/UX | Yes |
 | US-09 | As an observant commuter, I want to report an outdated route or fare, so that the static data can be corrected for everyone. | F7, F11 | Maintenance | Yes |
-| US-10 | As a commuter, I want to browse a route’s complete list of stops, so that I can see everywhere it passes before deciding to ride. | F1, F2. F12 | Routing | Yes |
+| US-10 | As a commuter, I want to browse a route’s complete list of stops, so that I can see everywhere it passes before deciding to ride. | F1, F2, F12 | Routing | Yes |
 | US-11 | As an out-of-town visitor, I want a reference fare for tricycle and sikad rides, so that I can negotiate fairly. | F10, F13 | Fares | Yes |
-| US-12&nbsp; | As a student boarder, I want a high-contrast screen showing my exact discounted fare and change, so that I can show the driver without announcing it across a crowded jeepney.&nbsp; | F14, F17&nbsp; | Fares | Yes |
+| US-12&nbsp; | As a student boarder, I want a high-contrast screen showing my exact discounted fare and change, so that I can show the driver without announcing it across a crowded jeepney.&nbsp; | F14, F16 | Fares | Yes |
 | US-13 | As a student, I want to see when the student discount applies, so that I can answer a driver who says it doesn’t.&nbsp; | F15&nbsp; | Fares | Yes |
 
 &nbsp;
@@ -285,24 +285,20 @@ Acceptance criteria:
 
 &nbsp;Acceptance criteria:
 
-- [x] ~~A “Show driver” button appears on the fare details screen of every route that has fare data.~~  
-- [ ] ~~Tapping it opens a full-screen view showing the selected fare (Regular or Student/Senior/PWD) in black text on a white background at a minimum of 24px (1.5rem).~~  
-- [ ] The user can enter the coin or bill they will hand over, and the screen displays the change due.  
-- [ ] (unhappy) If the route has no fare data, the screen displays “Fare unavailable” and shows no amount.  
-- [ ] (unhappy) If the entered amount is lower than the fare, the screen displays “Amount is less than the fare” and shows no change figure.
+- [x] A “Show driver” button appears on the fare details screen of every route that has fare data.  
+- [x] Tapping it opens a full-screen view showing the selected fare (Regular or Student/Senior/PWD) in black text on a white background at a minimum of 24px (1.5rem).  
+- [x] The user can enter the coin or bill they will hand over, and the screen displays the change due.  
+- [x] (unhappy) If the route has no fare data, the screen displays “Fare unavailable” and shows no amount.  
+- [x] (unhappy) If the entered amount is lower than the fare, the screen displays “Amount is less than the fare” and shows no change figure.
 
 ### US-13: Discount eligibility note
 
 Acceptance criteria:
 
-- [ ] A “When does this apply?” link appears next to the discounted fare.  
-- [ ] Tapping it displays who qualifies, which ID is required, and whether the discount applies on weekends and school breaks, together with the source name and the date the rule was verified.  
-- [ ] The note closes when the user taps “Close” or taps outside it.  
-- [ ] (unhappy) If the rule has not been verified, the note displays “Not yet confirmed” and shows no rule text
-
-&nbsp;
-
-### 
+- [x] A “When does this apply?” link appears next to the discounted fare.  
+- [x] Tapping it displays who qualifies, which ID is required, and whether the discount applies on weekends and school breaks, together with the source name and the date the rule was verified.  
+- [x] The note closes when the user taps “Close” or taps outside it.  
+- [x] (unhappy) If the rule has not been verified, the note displays “Not yet confirmed” and shows no rule text
 
 &nbsp;
 
@@ -318,7 +314,9 @@ Acceptance criteria:
 
 ## 6\. Use Case
 
-### Use-case diagram![Use-Case Diagram](backlog-images/Use-case_diagram.png)
+### Use-case diagram
+
+![Use-case](backlog-images/Use-case.png)
 
 ### UC-01: Calculate Trip Route and Fare
 
@@ -338,7 +336,7 @@ Acceptance criteria:
 |  | Define Journey | View Route & Transfers | Check Pricing | Trip Detail & Feedback |
 | :---- | :---- | :---- | :---- | :---- |
 | **Release 1 (MVP)** | US-01 | US-03, US-02 | US-04, US-05 |  |
-| **Release 2** |  | US-10 | US-06 |  |
+| **Release 2** |  | US-10 | US-06, US-12, US-13 |  |
 | **Later** |  |  | US-07, US-11 | US-08, US-09 |
 
 &nbsp;
@@ -352,18 +350,20 @@ Acceptance criteria:
 | 3 | US-05 Side-by-side discounted fare | Must | S | Quick win | Sprint 1 |
 | 4 | US-03 Explicit transfer points | Must | M | Big bet | Sprint 2 |
 | 5 | US-02 Visual landmark tags | Must | M | Big bet | Sprint 2 |
-| 6 | US-06 Compare fares across operators | Should | S | Quick win | Sprint 2&nbsp; |
-| 7 | US-10 Browse full list of stops | Should | S | Quick win | Later&nbsp;&nbsp; |
-| 8 | US-07 Fare "last updated" timestamp | Could | S | Quick win | Later |
-| 9 | US-09 Report outdated static data | Could | M | Fill-in | Later |
-| 10 | US-08 Large text interface for fares | Could | S | Fill-in | Later |
-| 11 | US-11 Reference fare for tricycle and sikad&nbsp; | Won’t | M&nbsp; | Money pit | Out of Scope |
+| 6 | **US-06 Compare fares across operators** | Should | S | Quick win | Later&nbsp; |
+| 7 | **US-10 Browse full list of stops** | Should | S | Quick win | Later&nbsp;&nbsp; |
+| 8 | US-12 Show-driver fare screen&nbsp; | Should&nbsp; | M | Big bet&nbsp; | Later |
+| 9 | US-08 Large text interface&nbsp; | Should&nbsp; | S | Fill-in | Later |
+| 10 | US-07 Last updated&nbsp; | Could | S | Fill-in | Later |
+| 11 | US-13 Discount eligibility note&nbsp; | Could | S | Quick win&nbsp; | Later&nbsp; |
+| 12 | US-09 Report outdated data&nbsp; | Could&nbsp; | S&nbsp; | Quick win&nbsp; | Later&nbsp; |
+| 13 | US-11 Tricycle/sikad fare&nbsp; | Won’t | M&nbsp; | Money pit | Out of Scope |
 
 &nbsp;
 
 ### How we ordered it
 
-US-01 is first because every other story depends on a route being found, and V1's first problem was not knowing which vehicle to take (F1). US-04 and US-05 come next because both interviews showed fare uncertainty (F3, F6, F8), and US-05 is small. US-03 and US-02 follow because they depend on the route data from US-01 and address V1's and V3’s transfer and wrong-drop-off problems (F4, F2, F9). The main risk is the fare and route data, so Sprint 1 builds the dataset for a small set of pilot routes and records the source of each fare. The Release 2 and Later stories (US-06, US-10, US-07, US-09, US-08) improve the core path but are not needed to complete it. US-11 is a Won't-have for the first release. Only V3 raised tricycle and sikad fares (F10), no official fare source has been confirmed (A4), and the pilot is limited to jeepney and bus routes (F13).&nbsp;
+US-01 is first because every other story depends on a route being found, and V1's first problem was not knowing which vehicle to take (F1). US-04 and US-05 come next because both interviews showed fare uncertainty (F3, F6, F8), and US-05 is small. US-03 and US-02 follow because they depend on the route data from US-01 and address V1's and V3’s transfer and wrong-drop-off problems (F4, F2, F9). The main risk is the fare and route data, so Sprint 1 builds the dataset for a small set of pilot routes and records the source of each fare. The Release 2 and Later stories (US-06, US-10, US-07, US-09, US-08, US-12, US-13) improve the core path but are not needed to complete it. US-11 is a Won't-have for the first release. Only V3 raised tricycle and sikad fares (F10), no official fare source has been confirmed (A1), and the pilot is limited to jeepney and bus routes (F13). US-12 and US-13 come from V4 (F14, F15, F16). US-12 builds on the fare stories, and US-13 waits for verification of the student discount rules (A4).&nbsp;
 
 ### Capacity check
 
@@ -389,7 +389,7 @@ US-01 is first because every other story depends on a route being found, and V1'
 | Story | Problem or goal it addresses | Source finding(s) | Test cases (Week 9\) |
 | :---- | :---- | :---- | :---- |
 | US-01 | Know which jeepney or bus to take without local knowledge | F1 | \[Leave blank for now\] |
-| US-02 | Avoid getting off at the wrong stop | F2, F9 | \[Leave blank for now\] |
+| US-02 | Avoid getting off at the wrong stop | F2, F9, F17 | \[Leave blank for now\] |
 | US-03 | Know where to transfer without reading signboards | F4 | \[Leave blank for now\] |
 | US-04 | Know the exact fare before boarding | F3, F6, F10 | \[Leave blank for now\] |
 | US-05 | Verify the correct discounted fare | F8 | \[Leave blank for now\] |
@@ -399,7 +399,7 @@ US-01 is first because every other story depends on a route being found, and V1'
 Gaps found:&nbsp;
 
 - US-08 has no supporting finding. It cites F6, which is about a senior who cannot ask the driver for the fare, not about eyesight. Action: keep it as Could, mark the source as unverified, and ask about readability in the next interview round.  
-- F10 (tricycle and sikad fares) is covered by US-11, a Won't-have for the first release. Action: kept in the backlog at rank 11 and revisited once the fare source in A4 is confirmed.&nbsp;&nbsp;  
+- F10 (tricycle and sikad fares) is covered by US-11, a Won't-have for the first release. Action: kept in the backlog at rank 13 and revisited once the fare source in A1 is confirmed.&nbsp;&nbsp;  
 - F13 (transport differs by region) is a constraint with no story of its own. Action: covered by the pilot-coverage unhappy path in US-01 and by limiting the pilot to Iligan jeepney and bus routes.&nbsp;
 
 ## 11\. Validation
@@ -442,13 +442,13 @@ Gaps found:&nbsp;
 | Member | Interviews or analysis | Stories, criteria, or use case | Review or validation |
 | :---- | :---- | :---- | :---- |
 | Steve Nash H. Llamedo | V1 Interview, Defined problem areas for out of town visitors | Core routing stories: US \- (01 \-04), Use Case | Idea checked, Formatting |
-| Rey Mark E. Degamo | V2 Interview, Section 8 | F5-F8, US-05 US \- 06 | Interview relation check&nbsp; |
+| Rey Mark E. Degamo | V2 Interview, Section 8 | F5-F8, US- (05-08) | Interview relation check&nbsp; |
 | Brent Jehu Senica | V3 Interview, Sections 10 & 11\.&nbsp; | F9-F13, US-02, US \- 11 | Sections 4, 5, 6, 7, 8, 9, & 12\. Also  Fact checked, proofread, and Source checked. |
-| Joexua Ross Rieck L. Paco | V4 Interview, Stakeholder walk-through & Section 12 |  |  |
+| Joexua Ross Rieck L. Paco | V4 Interview, Stakeholder walk-through & Section 12 | F14-F17, US-12, US-13 | Reviewed the backlog, flagged inconsistencies&nbsp; |
 
 &nbsp;
 
-14\. References
+## 14\. References
 
 \- CSC181 Week 4 lecture slides
 
